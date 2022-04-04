@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/Ian-s-React-Portfolio/static/css/main.65ea7de6.css",
+    "main.js": "/Ian-s-React-Portfolio/static/js/main.da879359.js",
+    "static/js/787.137aa76a.chunk.js": "/Ian-s-React-Portfolio/static/js/787.137aa76a.chunk.js",
+    "static/media/Horiseon.png": "/Ian-s-React-Portfolio/static/media/Horiseon.1e0effb57dc5962fbecd.png",
+    "static/media/adunderwood96.github.io_a-novel-idea_ (6).png": "/Ian-s-React-Portfolio/static/media/adunderwood96.github.io_a-novel-idea_ (6).515ff4b2cea33f38b808.png",
+    "static/media/workout-tracker.png": "/Ian-s-React-Portfolio/static/media/workout-tracker.383c62d6cc28e317e907.png",
+    "static/media/me2.png": "/Ian-s-React-Portfolio/static/media/me2.5871bf9f907e1057ae12.png",
+    "static/media/me.png": "/Ian-s-React-Portfolio/static/media/me.a3429077a03fc370b400.png",
+    "static/media/github.svg": "/Ian-s-React-Portfolio/static/media/github.9102fa43d931c6d86a83b6eac80200df.svg",
+    "static/media/insta.svg": "/Ian-s-React-Portfolio/static/media/insta.12e899f3ecd7453cfc0f3ccc10d94f49.svg",
+    "static/media/link.svg": "/Ian-s-React-Portfolio/static/media/link.f3af0565f4ee35d03e21135fa31b8f3b.svg",
+    "static/media/fb.svg": "/Ian-s-React-Portfolio/static/media/fb.47a533681796865fb8ff8b2ea87ef674.svg",
+    "index.html": "/Ian-s-React-Portfolio/index.html",
+    "main.65ea7de6.css.map": "/Ian-s-React-Portfolio/static/css/main.65ea7de6.css.map",
+    "main.da879359.js.map": "/Ian-s-React-Portfolio/static/js/main.da879359.js.map",
+    "787.137aa76a.chunk.js.map": "/Ian-s-React-Portfolio/static/js/787.137aa76a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.65ea7de6.css",
+    "static/js/main.da879359.js"
+  ]
+}
