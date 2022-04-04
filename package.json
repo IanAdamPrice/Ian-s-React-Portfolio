@@ -1,7 +1,7 @@
 {
   "name": "photo-port",
   "version": "0.1.0",
-  "homepage": "https://ianadamprice.github.io/Ian-s-React-Portfolio",
+  "homepage": "https://ianadamprice.github.io",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.3",
