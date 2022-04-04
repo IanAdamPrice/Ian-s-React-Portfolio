@@ -13,8 +13,8 @@ function App() {
     <Router>
       <Nav />
       <Switch>
-        <Route path='/'>
-          <About></About>
+        <Route exact path='/'>
+          <About />
         </Route>
         <Route path='/work'>
           <Work></Work>
