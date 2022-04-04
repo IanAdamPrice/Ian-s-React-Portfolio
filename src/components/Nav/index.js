@@ -6,16 +6,13 @@ function Nav() {
     <section>
       <nav class="topnav" id="myTopnav">
         <div class="navi">
-        <a href="/" class="active">Home</a>
+            <a href="/">About</a>
         </div>
         <div class="navi">
-            <a href="#hero">About</a>
+            <a href="/work">Work</a>
         </div>
         <div class="navi">
-            <a href="#work">Work</a>
-        </div>
-        <div class="navi">
-            <a href="#contact">Contact</a>
+            <a href="/contact">Contact</a>
         </div>
         <div class="avatar">
             <img src={require ("../../assets/avatar/me.png")} alt="my avatar" />
