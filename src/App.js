@@ -13,9 +13,15 @@ function App() {
     <Router>
       <Nav />
       <Switch>
-        <Route path='/' exact component={About} />
-        <Route path='/work' exact component={Work} />
-        <Route path='/contact' exact component={Contact} />
+        <Route path='/' exact>
+          <About></About>
+        </Route>
+        <Route path='/work' exact >
+          <Work></Work>
+        </Route>
+        <Route path='/contact' exact>
+          <Contact></Contact>
+        </Route>
 
       </Switch>
     </Router>

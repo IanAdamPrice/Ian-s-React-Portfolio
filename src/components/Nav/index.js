@@ -1,5 +1,4 @@
 import React from "react";
-import {About} from "../About";
 
 
 function Nav() {
@@ -7,7 +6,7 @@ function Nav() {
     <section>
       <nav class="topnav" id="myTopnav">
         <div class="navi">
-            <a href={About}>About</a>
+            <a href='/' >About</a>
         </div>
         <div class="navi">
             <a href="/work">Work</a>
