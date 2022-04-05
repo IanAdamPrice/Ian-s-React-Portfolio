@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 
 function Nav() {
@@ -6,13 +7,13 @@ function Nav() {
     <section>
       <nav class="topnav" id="myTopnav">
         <div class="navi">
-            <link to='/' >About</link>
+            <Link to='/Ian-s-React-Portfolio' >About</Link>
         </div>
         <div class="navi">
-            <link to="/work">Work</link>
+            <Link to="/work">Work</Link>
         </div>
         <div class="navi">
-            <link to="/contact">Contact</link>
+            <Link to="/contact">Contact</Link>
         </div>
         <div class="avatar">
             <img src={require ("../../assets/avatar/me.png")} alt="my avatar" />
