@@ -13,7 +13,7 @@ function App() {
     <main>
       <Nav />
       <Switch>
-        <Route path='/Ian-s-React-Portfolio' exact component={About} />
+        <Route path='/' exact component={About} />
         <Route path='/work' exact component={Work} />
         <Route path='/contact' exact component={Contact} />
 

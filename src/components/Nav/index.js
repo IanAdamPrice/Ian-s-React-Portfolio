@@ -7,7 +7,7 @@ function Nav() {
     <section>
       <nav class="topnav" id="myTopnav">
         <div class="navi">
-            <Link to='/Ian-s-React-Portfolio' >About</Link>
+            <Link to='/' >About</Link>
         </div>
         <div class="navi">
             <Link to="/work">Work</Link>
