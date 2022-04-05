@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Ian-s-React-Portfolio/static/css/main.65ea7de6.css",
-    "main.js": "/Ian-s-React-Portfolio/static/js/main.67f6c08d.js",
-    "static/js/787.137aa76a.chunk.js": "/Ian-s-React-Portfolio/static/js/787.137aa76a.chunk.js",
+    "main.js": "/Ian-s-React-Portfolio/static/js/main.b6a098ac.js",
+    "static/js/787.8f1f55a9.chunk.js": "/Ian-s-React-Portfolio/static/js/787.8f1f55a9.chunk.js",
     "static/media/Horiseon.png": "/Ian-s-React-Portfolio/static/media/Horiseon.1e0effb57dc5962fbecd.png",
     "static/media/adunderwood96.github.io_a-novel-idea_ (6).png": "/Ian-s-React-Portfolio/static/media/adunderwood96.github.io_a-novel-idea_ (6).515ff4b2cea33f38b808.png",
     "static/media/workout-tracker.png": "/Ian-s-React-Portfolio/static/media/workout-tracker.383c62d6cc28e317e907.png",
@@ -14,11 +14,11 @@
     "static/media/fb.svg": "/Ian-s-React-Portfolio/static/media/fb.47a533681796865fb8ff8b2ea87ef674.svg",
     "index.html": "/Ian-s-React-Portfolio/index.html",
     "main.65ea7de6.css.map": "/Ian-s-React-Portfolio/static/css/main.65ea7de6.css.map",
-    "main.67f6c08d.js.map": "/Ian-s-React-Portfolio/static/js/main.67f6c08d.js.map",
-    "787.137aa76a.chunk.js.map": "/Ian-s-React-Portfolio/static/js/787.137aa76a.chunk.js.map"
+    "main.b6a098ac.js.map": "/Ian-s-React-Portfolio/static/js/main.b6a098ac.js.map",
+    "787.8f1f55a9.chunk.js.map": "/Ian-s-React-Portfolio/static/js/787.8f1f55a9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.65ea7de6.css",
-    "static/js/main.67f6c08d.js"
+    "static/js/main.b6a098ac.js"
   ]
 }
