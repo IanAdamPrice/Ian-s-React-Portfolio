@@ -10,7 +10,7 @@ function App() {
 
 
   return (
-    <Router>
+    <main>
       <Nav />
       <Switch>
         <Route path='/Ian-s-React-Portfolio' exact component={About} />
@@ -18,7 +18,7 @@ function App() {
         <Route path='/contact' exact component={Contact} />
 
       </Switch>
-    </Router>
+    </main>
   );
 }
 
