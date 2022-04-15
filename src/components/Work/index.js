@@ -31,7 +31,7 @@ function Work() {
             <div class="mySlides fade">
                     <a href="">
                     <img 
-                      src={require ("../../assets/work/Horiseon.png")} 
+                      src={require ("../../assets/work/whenyagottago.png")} 
                       class="images" 
                       id="placeholder"
                       alt="a placeholder"
