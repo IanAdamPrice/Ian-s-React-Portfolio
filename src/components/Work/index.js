@@ -18,7 +18,7 @@ function Work() {
             </div>
   
             <div class="mySlides fade">
-                <a href="">
+                <a href="https://polar-castle-74679.herokuapp.com/">
                 <img 
                   src={require ("../../assets/work/workout-tracker.png")} 
                   class="images" 
@@ -29,7 +29,7 @@ function Work() {
             </div>
   
             <div class="mySlides fade">
-                    <a href="">
+                    <a href="https://boiling-scrubland-07440.herokuapp.com/">
                     <img 
                       src={require ("../../assets/work/whenyagottago.png")} 
                       class="images" 
