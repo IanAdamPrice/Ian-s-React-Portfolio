@@ -15,6 +15,10 @@ const contactEmail = nodemailer.createTransport({
     user: "ianadamprice@gmail.com",
     pass: "4ansally",
   },
+  tls: {
+    // do not fail on invalid certs
+    rejectUnauthorized: false
+}
 });
 
 contactEmail.verify((error) => {
@@ -44,4 +48,12 @@ router.post("/contact", (req, res) => {
       res.json({ status: "Message Sent" });
     }
   });
+});
+
+if (process.env.NODE_ENV === 'production') {
+  app.use(express.static(path.join(__dirname, '../client/build')));
+}
+
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, '../client/build/index.html'));
 });
