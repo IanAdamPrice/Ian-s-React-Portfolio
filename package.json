@@ -2,7 +2,6 @@
   "name": "photo-port",
   "version": "0.1.0",
   "homepage": "http://IanAdamPrice.github.io/Ian-s-React-Portfolio",
-  "proxy": "http://localhost:3001/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.3",
