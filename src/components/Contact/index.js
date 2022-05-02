@@ -9,37 +9,26 @@ import linkSVG from '../../assets/icons/link.svg';
 
 
 function Contact() {
-  const [formState, setFormState] = useState({ name: '', email: '', message: '' });
-
-  const [errorMessage, setErrorMessage] = useState('');
-  const { name, email, message } = formState;
-
-  const handleSubmit = (e) => {
+  const [status, setStatus] = useState("Submit");
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    if (!errorMessage) {
-      console.log('Submit Form', formState);
-    }
-  };
-
-  const handleChange = (e) => {
-    if (e.target.name === 'email') {
-      const isValid = validateEmail(e.target.value);
-      if (!isValid) {
-        setErrorMessage('Your email is invalid.');
-      } else {
-        setErrorMessage('');
-      }
-    } else {
-      if (!e.target.value.length) {
-        setErrorMessage(`${e.target.name} is required.`);
-      } else {
-        setErrorMessage('');
-      }
-    }
-    if (!errorMessage) {
-      setFormState({ ...formState, [e.target.name]: e.target.value });
-      console.log('Handle Form', formState);
-    }
+    setStatus("Sending...");
+    const { name, email, message } = e.target.elements;
+    let details = {
+      name: name.value,
+      email: email.value,
+      message: message.value,
+    };
+    let response = await fetch("http://localhost:5000/contact", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json;charset=utf-8",
+      },
+      body: JSON.stringify(details),
+    });
+    setStatus("Submit");
+    let result = await response.json();
+    alert(result.status);
   };
 
   return (
@@ -50,30 +39,25 @@ function Contact() {
         <h3>Contact</h3>
           <div>
             <label htmlFor="name">Your Name:</label>
-            <input type="text" id="name" defaultValue={name} onBlur={handleChange} placeholder="Your Name" />
+            <input type="text" id="name"  placeholder="Your Name" />
           </div>
           <div>
             <label htmlFor="email">E-mail:</label>
-            <input type="email" id="email" defaultValue={email} onBlur={handleChange} placeholder="Your Email"/>
+            <input type="email" id="email"  placeholder="Your Email"/>
           </div>
           <div>
             <label htmlFor="message">Message:</label>
-            <textarea id="message" rows="5" defaultValue={message} onBlur={handleChange} placeholder="Your Message..."/>
+            <textarea id="message" rows="5"  placeholder="Your Message..."/>
           </div>
-          {errorMessage && (
-          <div>
-            <p className="error-text">{errorMessage}</p>
-          </div>
-        )}
-            <button data-testid="button" type="submit">Submit</button>
+            <button data-testid="button" type="submit">{status}</button>
         </form>
 
-        <div class="divider">
+        <div className="divider">
         </div>
         
-        <div class="social">
+        <div className="social">
                 <h2>Find Me Online</h2>
-                <div class="icons" id="fb">
+                <div className="icons" id="fb">
                     <a href="https://www.facebook.com/ian.a.price.3/">
                     <img 
                       src={fbSVG}
@@ -81,7 +65,7 @@ function Contact() {
                     />
                     </a>
                 </div>
-                <div class="icons" id="insta">
+                <div className="icons" id="insta">
                     <a href="https://www.instagram.com/ianaprice/">
                     <img 
                       src={igSVG} 
@@ -90,7 +74,7 @@ function Contact() {
                     />
                     </a>
                 </div>
-                <div class="icons" id="github">
+                <div className="icons" id="github">
                     <a href="https://github.com/IanAdamPrice">
                     <img 
                       src={ghSVG} 
@@ -98,7 +82,7 @@ function Contact() {
                     />
                     </a>
                 </div>
-                <div class="icons" id="link">
+                <div className="icons" id="link">
                     <a href="https://www.linkedin.com/in/ian-price-ba164b223/">
                     <img 
                       src={linkSVG} 

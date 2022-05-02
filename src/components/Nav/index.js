@@ -5,17 +5,17 @@ import { Link } from "react-router-dom";
 function Nav() {
   return (
     <section>
-      <nav class="topnav" id="myTopnav">
-        <div class="navi">
+      <nav className="topnav" id="myTopnav">
+        <div className="navi">
             <Link to='/' >About</Link>
         </div>
-        <div class="navi">
+        <div className="navi">
             <Link to="/work">Work</Link>
         </div>
-        <div class="navi">
+        <div className="navi">
             <Link to="/contact">Contact</Link>
         </div>
-        <div class="avatar">
+        <div className="avatar">
             <img src={require ("../../assets/avatar/me.png")} alt="my avatar" />
             
         </div>
