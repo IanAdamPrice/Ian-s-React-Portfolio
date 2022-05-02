@@ -10,22 +10,21 @@ app.use("/", router);
 app.listen(5000, () => console.log("Server Running"));
 
 const contactEmail = nodemailer.createTransport({
-  service: 'gmail',
+  host: "smtp.gmail.com",
+  port: 465,
+  secure: true,
   auth: {
-    user: "ianadamprice@gmail.com",
-    pass: "4ansally",
+    type: "OAuth2",
+    user: "ianadamprice@gmail.com"
   },
-  tls: {
-    // do not fail on invalid certs
-    rejectUnauthorized: false
-}
 });
 
-contactEmail.verify((error) => {
-  if (error) {
-    console.log(error);
+transporter.set("oauth2_provision_cb", (user, renew, callback) => {
+  let accessToken = userTokens[user];
+  if (!accessToken) {
+    return callback(new Error("Unknown user"));
   } else {
-    console.log("Ready to Send");
+    return callback(null, accessToken);
   }
 });
 
@@ -50,10 +49,3 @@ router.post("/contact", (req, res) => {
   });
 });
 
-if (process.env.NODE_ENV === 'production') {
-  app.use(express.static(path.join(__dirname, '../client/build')));
-}
-
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, '../client/build/index.html'));
-});
