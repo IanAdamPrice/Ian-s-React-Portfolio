@@ -4,6 +4,8 @@ const cors = require("cors");
 const nodemailer = require("nodemailer");
 const app = express();
 const PORT =  process.env.PORT || 3001;
+const path = require('path');
+
 
 app.use(cors());
 app.use(express.json());
@@ -29,6 +31,14 @@ contactEmail.set("oauth2_provision_cb", (user, renew, callback) => {
   } else {
     return callback(null, accessToken);
   }
+});
+
+if (process.env.NODE_ENV === 'production') {
+  app.use(express.static(path.join(__dirname, '../client/build')));
+}
+
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, '../client/build/index.html'));
 });
 
 router.post("/contact", (req, res) => {
