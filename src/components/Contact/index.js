@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 
 import { validateEmail } from '../../utils/helpers';
 
@@ -10,23 +10,24 @@ import linkSVG from '../../assets/icons/link.svg';
 
 function Contact() {
 
+
   return (
 
     <section id="contact">
         
-        <form id="contact-form" onSubmit={handleSubmit}>
+        <form id="contact-form">
         <h3>Contact</h3>
           <div>
             <label htmlFor="name">Your Name:</label>
-            <input type="text" id="name"  placeholder="Your Name" ref={nameRef} tabIndex="1"/>
+            <input type="text" id="name"  placeholder="Your Name" tabIndex="1"/>
           </div>
           <div>
             <label htmlFor="email">E-mail:</label>
-            <input type="email" id="email"  placeholder="Your Email" ref={emailRef} tabIndex="2"/>
+            <input type="email" id="email"  placeholder="Your Email" tabIndex="2"/>
           </div>
           <div>
             <label htmlFor="message">Message:</label>
-            <textarea id="message" rows="5"  placeholder="Your Message..." ref={messageRef} tabIndex="3"/>
+            <textarea id="message" rows="5"  placeholder="Your Message..." tabIndex="3"/>
           </div>
             <button data-testid="button" type="submit">Submit</button>
         </form>
