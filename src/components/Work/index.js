@@ -6,7 +6,7 @@ function Work() {
             <div className="slideshow-container">
 
             <div className="mySlides fade">
-                <a href="https://adunderwood96.github.io/a-novel-idea/">
+                <a href="https://apark8496.github.io/The-Book-Hangover-Cure/">
                 <img 
                   src={require ("../../assets/work/adunderwood96.github.io_a-novel-idea_ (6).png")} 
                   id="book" 
